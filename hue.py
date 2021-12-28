@@ -9,8 +9,8 @@ hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 #set the bounds for the red hue
-lower_red = np.array([240,100,50])
-upper_red = np.array([300,255,255])
+lower_red = np.array([160,100,50])
+upper_red = np.array([180,255,255])
 
 #create a mask using the bounds set
 mask = cv.inRange(hsv, lower_red, upper_red)
